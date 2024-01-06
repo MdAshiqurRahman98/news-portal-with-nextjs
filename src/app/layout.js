@@ -14,10 +14,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar></Navbar>
-        {children}
+        <div className='min-h-screen'>
+          <Navbar></Navbar>
+          {children}
+        </div>
         <Footer></Footer>
       </body>
     </html>
-  )
+  );
 }
